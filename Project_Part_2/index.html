@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>App for BMI Measurement</title>
+  <meta charset="utf-8">
+  <meta name="description" content="App for BMI Measurement">
+  <meta name="author" content="Student">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>App for BMI Measurement</h1>
+    <h2>Project for Developing Data Products</h2>
+    <p>Student<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Introduction</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>This is a short introduction to a little web App which calculates the so called Body Mass Index (BMI).</li>
+<li>The BMI is calculated from heigth and weigth of a person and a simple measure to tell whether the persons weight is in or out of normal range.</li>
+<li>Overweight and underweight bear potentiously serious risks, thus a simple application for monitoring weight can be useful.</li>
+<li>You can find the application at: <a href="https://armgard.shinyapps.io/Project_DataProducts/">https://armgard.shinyapps.io/Project_DataProducts/</a></li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Instructions for Use</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>1.The input parameters for calculating the BMI are heigth of the person in cm and the weight of the person in kg. </p>
+
+<p>2.They have to be entered in the respective fields at the left hand side of the slid.</p>
+
+<p>3.After pressing the submit button, results are displayed on the right hand side. </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Algorithm</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The BMI is calculated by dividing the persons weight (in kg) by the persons heigth (in m) squared:</p>
+
+<pre><code class="r">BMI &lt;- function(height, weight) weight/(height/100)^2
+</code></pre>
+
+<p>Thus, e.g. a person of heigth 170 cm and weight 70 kg has a BMI of 24.22.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Interpretation of results</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>According to their BMI, the weight can be classified:</p>
+
+<table><thead>
+<tr>
+<th>BMI</th>
+<th align="center">Weight class</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>&lt;20</td>
+<td align="center">underweight</td>
+</tr>
+<tr>
+<td>20-25</td>
+<td align="center">normal weight</td>
+</tr>
+<tr>
+<td>25-30</td>
+<td align="center">overweight</td>
+</tr>
+<tr>
+<td>&gt;35</td>
+<td align="center">obese</td>
+</tr>
+</tbody></table>
+
+<p>The according classification is also part of the result.</p>
+
+<p><em>Thank you for your attention!</em></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Introduction'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Instructions for Use'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Algorithm'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Interpretation of results'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title=''>
+         5
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
